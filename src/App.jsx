@@ -29,13 +29,30 @@ function Header() {
           <span>TimeElite</span>
         </div>
         <nav className="nav-container">
-          <a href="#">Каталог</a>
-          <a href="#">Бренды</a>
-          <a href="#">О нас</a>
-          <a href="#">Контакты</a>
+          <a href="#" className="nav-container-link">
+            Каталог
+          </a>
+          <a href="#" className="nav-container-link">
+            Бренды
+          </a>
+          <a href="#" className="nav-container-link">
+            О нас
+          </a>
+          <a href="#" className="nav-container-link">
+            Контакты
+          </a>
         </nav>
         <button className="btn-login">Войти</button>
       </div>
     </header>
   );
+}
+
+function Main() {
+  <div className="main-container">
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+  </div>;
 }
