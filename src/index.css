@@ -12,19 +12,28 @@ body {
 }
 
 .header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.913);
+  z-index: 1000;
   border-bottom: 1px solid rgb(198, 217, 211);
+  display: flex;
 }
 
 .header-content {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1500px;
   padding: 20px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.main-container {
+  margin-top: 100px;
 }
 
 .storename-container {
@@ -54,7 +63,6 @@ body {
 
 .btn-login {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
   width: 70px;
   padding: 7px;
   cursor: pointer;
@@ -66,5 +74,83 @@ body {
   &:hover {
     color: aliceblue;
     background-color: rgb(162, 187, 64);
+  }
+}
+
+.advertising-container {
+  padding: 120px 0px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(198, 217, 211);
+}
+
+.advertising-content {
+  max-width: 1500px;
+  padding: 20px;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.text-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.premium-watches {
+  width: 110px;
+  font-family: "Inter", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 12px;
+  background-color: rgb(162, 187, 64);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.slogan-text {
+  margin: 20px 0px;
+  color: rgb(72, 72, 72);
+  font-family: "Inter", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 65px;
+}
+
+.highlighted-text {
+  color: rgb(0, 57, 58);
+}
+
+.description-text {
+  margin: 0px;
+  color: rgb(72, 72, 72);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.image-content {
+  border: 30px solid rgb(234, 253, 252);
+  border-radius: 15px;
+  
+
+  display: flex;
+}
+
+.watch-image {
+  width: 550px;
+  height: 550px;
+}
+
+@media (max-width: 1500px) {
+  .advertising-content {
+    max-width: 1300px;
+  }
+  .header-content {
+    max-width: 1300px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .advertising-content {
+    max-width: 1100px;
+  }
+  .header-content {
+    max-width: 1100px;
   }
 }

@@ -2,6 +2,7 @@ export default function App() {
   return (
     <div className="app-container">
       <Header />
+      <Main />
     </div>
   );
 }
@@ -49,10 +50,36 @@ function Header() {
 }
 
 function Main() {
-  <div className="main-container">
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-  </div>;
+  return (
+    <div className="main-container">
+      <section className="advertising-section">
+        <div className="advertising-container">
+          <div className="advertising-content">
+            <div className="text-content">
+              <span className="premium-watches">Премиальные часы</span>
+              <h1 className="slogan-text">
+                Время - это <span className="highlighted-text">роскошь</span>,
+                которую мы дарим
+              </h1>
+              <p className="description-text">
+                Откройте для себя эксклюзивную коллекцию швейцарских часов от
+                ведущих мировых брендов. Каждые часы — это произведение
+                искусства.
+              </p>
+            </div>
+            <div className="image-content">
+              <img
+                className="watch-image"
+                src="https://v0-watch-store-landing-page.vercel.app/luxury-swiss-watch-on-elegant-display-stand.jpg"
+                alt="Premium watchs"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </div>
+  );
 }
