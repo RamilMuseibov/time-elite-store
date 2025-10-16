@@ -16,10 +16,12 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.913);
+  background-color: rgba(255, 255, 255, 0.7);
   z-index: 1000;
-  border-bottom: 1px solid rgb(198, 217, 211);
+  border-bottom: 1px solid rgb(239, 246, 244);
   display: flex;
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
 }
 
 .header-content {
@@ -30,10 +32,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.main-container {
-  margin-top: 100px;
 }
 
 .storename-container {
@@ -52,9 +50,10 @@ body {
 }
 
 .nav-container-link {
-  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
   text-decoration: none;
-  color: rgb(17, 104, 78);
+  color: rgb(23, 135, 101);
 
   &:hover {
     color: rgb(13, 77, 58);
@@ -77,22 +76,34 @@ body {
   }
 }
 
-.advertising-container {
+.main-container {
+  margin-top: 100px;
+}
+
+.advertising-section {
   padding: 120px 0px;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid rgb(198, 217, 211);
+  border-bottom: 1px solid rgb(239, 246, 244);
 }
 
 .advertising-content {
+  width: 100%;
+  margin: 0 auto;
   max-width: 1500px;
+  align-items: center;
   padding: 20px;
   display: flex;
   gap: 2.5rem;
 }
 
-.text-content {
-  padding: 10px;
+.advertising-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.advertising-text {
   display: flex;
   flex-direction: column;
 }
@@ -118,31 +129,148 @@ body {
 }
 
 .description-text {
+  line-height: 1.5;
   margin: 0px;
   color: rgb(72, 72, 72);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
-.image-content {
-  border: 30px solid rgb(234, 253, 252);
-  border-radius: 15px;
-  
-
+.advertising-btn {
+  max-width: 630px;
   display: flex;
+  gap: 1.5rem;
+}
+
+.catalog-btn {
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  display: flex;
+  color: white;
+  font-size: 18px;
+  background-color: rgb(0, 57, 58);
+  padding: 9px 15px;
+  border: none;
+  border-radius: 5px;
+  &:hover {
+    color: aliceblue;
+    background-color: rgb(3, 78, 79);
+  }
+}
+
+.catalog-btn-image {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.consultation-btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  width: 350px;
+  color: rgb(72, 72, 72);
+  background-color: transparent;
+  padding: 5px 15px;
+  border: 1px solid rgb(239, 246, 244);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    color: aliceblue;
+    background-color: rgb(162, 187, 64);
+  }
+}
+
+.advertising-info {
+  display: flex;
+  gap: 2rem;
+}
+
+.model-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.years-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quantity {
+  margin: 0;
+  display: flex;
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(0, 57, 58);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.model {
+  margin: 0;
+  display: flex;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(72, 72, 72);
+}
+
+.advertising-image-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  box-shadow: inset;
+}
+
+.star-image-container {
+  position: absolute;
+  right: -11px;
+  top: -20px;
+
+  z-index: 2;
+}
+
+.star-image {
+  align-items: end;
+  background-color: rgb(162, 187, 64);
+  border-radius: 50%;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+}
+
+.watch-image-container {
+  padding: 32px;
+  background-color: rgb(234, 253, 252);
+  border-radius: 15px;
+  z-index: 1;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07),
+    0 0 30px rgba(0, 0, 0, 0.05);
 }
 
 .watch-image {
-  width: 550px;
-  height: 550px;
+  width: 664px;
+  height: 664px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1530px) {
   .advertising-content {
     max-width: 1300px;
+    align-items: start;
   }
   .header-content {
     max-width: 1300px;
+  }
+  .watch-image {
+    width: 536px;
+    height: 536px;
   }
 }
 

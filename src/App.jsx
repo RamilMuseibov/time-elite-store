@@ -53,12 +53,12 @@ function Main() {
   return (
     <div className="main-container">
       <section className="advertising-section">
-        <div className="advertising-container">
-          <div className="advertising-content">
-            <div className="text-content">
+        <div className="advertising-content">
+          <div className="advertising-text-content">
+            <div className="advertising-text">
               <span className="premium-watches">Премиальные часы</span>
               <h1 className="slogan-text">
-                Время - это <span className="highlighted-text">роскошь</span>,
+                Время — это <span className="highlighted-text">роскошь</span>,
                 которую мы дарим
               </h1>
               <p className="description-text">
@@ -67,7 +67,65 @@ function Main() {
                 искусства.
               </p>
             </div>
-            <div className="image-content">
+            <div className="advertising-btn">
+              <button className="catalog-btn">
+                Смотреть каталог
+                <div className="catalog-btn-image">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-right-icon lucide-chevron-right"
+                  >
+                    <path d="m9 18 6-6-6-6" />
+                  </svg>
+                </div>
+              </button>
+              <button className="consultation-btn">
+                Записаться на консультацию
+              </button>
+            </div>
+            <div className="advertising-info">
+              <div className="model-info">
+                <p className="quantity">500+</p>
+                <p className="model">Моделей</p>
+              </div>
+              <div className="brand-info">
+                <p className="quantity">50+</p>
+                <p className="model">Брендов</p>
+              </div>
+              <div className="years-info">
+                <p className="quantity">15</p>
+                <p className="model">Лет на рынке</p>
+              </div>
+            </div>
+          </div>
+          <div className="advertising-image-content">
+            <div className="star-image-container">
+              <div className="star-image">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-star-icon lucide-star"
+                >
+                  <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+                </svg>
+              </div>
+            </div>
+            <div className="watch-image-container">
               <img
                 className="watch-image"
                 src="https://v0-watch-store-landing-page.vercel.app/luxury-swiss-watch-on-elegant-display-stand.jpg"
@@ -77,7 +135,6 @@ function Main() {
           </div>
         </div>
       </section>
-      <section></section>
       <section></section>
       <section></section>
     </div>
