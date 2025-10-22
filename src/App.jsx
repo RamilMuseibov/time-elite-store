@@ -58,13 +58,11 @@ function Main() {
             <div className="advertising-text">
               <span className="premium-watches">Премиальные часы</span>
               <h1 className="slogan-text">
-                Время — это <span className="highlighted-text">роскошь</span>,
-                которую мы дарим
+                Время — это <span className="highlighted-text">роскошь</span>, которую мы дарим
               </h1>
               <p className="description-text">
-                Откройте для себя эксклюзивную коллекцию швейцарских часов от
-                ведущих мировых брендов. Каждые часы — это произведение
-                искусства.
+                Откройте для себя эксклюзивную коллекцию швейцарских часов от ведущих мировых брендов. Каждые часы — это
+                произведение искусства.
               </p>
             </div>
             <div className="advertising-btn">
@@ -87,9 +85,7 @@ function Main() {
                   </svg>
                 </div>
               </button>
-              <button className="consultation-btn">
-                Записаться на консультацию
-              </button>
+              <button className="consultation-btn">Записаться на консультацию</button>
             </div>
             <div className="advertising-info">
               <div className="model-info">
@@ -135,7 +131,32 @@ function Main() {
           </div>
         </div>
       </section>
-      <section></section>
+      <section className="selected-models-section">
+        <div className="selected-models-text-container">
+          <h1 className="selected-models-title">Избранные модели</h1>
+          <p className="selected-models-subtitle">Откройте для себя наши самые популярные и эксклюзивные часы</p>
+        </div>
+        <div className="selected-models-watch">
+          <div className="selected-models-watch-card">
+            <img
+              className="watch-card-image"
+              src="https://v0-watch-store-landing-page.vercel.app/abstract-geometric-shapes.png?height=400&width=400&query=rolex%20submariner%20luxury%20diving%20watch"
+            />
+          </div>
+          <div className="selected-models-watch-card">
+            <img
+              className="watch-card-image"
+              src="https://v0-watch-store-landing-page.vercel.app/abstract-geometric-shapes.png?height=400&width=400&query=rolex%20submariner%20luxury%20diving%20watch"
+            />
+          </div>
+          <div className="selected-models-watch-card">
+            <img
+              className="watch-card-image"
+              src="https://v0-watch-store-landing-page.vercel.app/abstract-geometric-shapes.png?height=400&width=400&query=rolex%20submariner%20luxury%20diving%20watch"
+            />
+          </div>
+        </div>
+      </section>
       <section></section>
     </div>
   );
