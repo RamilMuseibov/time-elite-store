@@ -81,7 +81,7 @@ body {
 }
 
 .advertising-section {
-  padding: 120px 0px;
+  padding: 100px 0px;
   display: flex;
   justify-content: center;
   /* border-bottom: 1px solid rgb(239, 246, 244); */
@@ -297,11 +297,81 @@ body {
 }
 
 .selected-models-watch-card {
+  padding: 20px 0px;
+  border-radius: 10px;
+  background-color: rgb(234, 253, 252);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07), 0 0 30px rgba(0, 0, 0, 0.05);
 }
 
 .watch-card-image {
+  object-fit: contain;
   width: 475px;
   height: 475px;
+}
+
+.watch-card-info {
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.watch-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(0, 57, 58);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.price-evaluation-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.watch-price {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(0, 57, 58);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.evaluation-container {
+  display: flex;
+}
+
+.star-container {
+  display: flex;
+  align-items: center;
+}
+
+.star-evaluation-image {
+  color: rgb(162, 187, 64);
+  fill: rgb(162, 187, 64);
+}
+
+.details-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.details-btn {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 430px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  background-color: rgb(0, 57, 58);
+  padding: 9px 15px;
+  border: none;
+  border-radius: 5px;
+  &:hover {
+    color: aliceblue;
+    background-color: rgb(3, 78, 79);
+  }
 }
 
 @media (max-width: 1530px) {
