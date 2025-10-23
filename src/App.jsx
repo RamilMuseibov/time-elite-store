@@ -247,7 +247,7 @@ function Main() {
                 <div className="evaluation-container">
                   <div className="star-container">
                     <svg
-                      className="star-evaluation-image"
+                    className="star-evaluation-image"
                       xmlns="http://www.w3.org/2000/svg"
                       width="17"
                       height="17"
@@ -263,7 +263,7 @@ function Main() {
                     </svg>
 
                     <svg
-                      className="star-evaluation-image"
+                    className="star-evaluation-image"
                       xmlns="http://www.w3.org/2000/svg"
                       width="17"
                       height="17"
@@ -279,7 +279,7 @@ function Main() {
                     </svg>
 
                     <svg
-                      className="star-evaluation-image"
+                    className="star-evaluation-image"
                       xmlns="http://www.w3.org/2000/svg"
                       width="17"
                       height="17"
@@ -295,7 +295,7 @@ function Main() {
                     </svg>
 
                     <svg
-                      className="star-evaluation-image"
+                    className="star-evaluation-image"
                       xmlns="http://www.w3.org/2000/svg"
                       width="17"
                       height="17"
@@ -311,7 +311,7 @@ function Main() {
                     </svg>
 
                     <svg
-                      className="star-evaluation-image"
+                    className="star-evaluation-image"
                       xmlns="http://www.w3.org/2000/svg"
                       width="17"
                       height="17"
