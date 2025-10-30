@@ -234,7 +234,6 @@ body {
   position: absolute;
   right: -11px;
   top: -20px;
-
   z-index: 2;
 }
 
@@ -293,14 +292,20 @@ body {
   max-width: 1500px;
   padding: 60px 20px;
   display: flex;
+  justify-content: center;
   gap: 2rem;
 }
 
 .selected-models-watch-card {
   padding: 20px 0px;
   border-radius: 10px;
-  background-color: rgb(234, 253, 252);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07), 0 0 30px rgba(0, 0, 0, 0.05);
+  background-color: rgb(222, 252, 251);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1), 0 0px 5px rgba(0, 0, 0, 0.07), 0 0 20px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.07), 0 0 40px rgba(0, 0, 0, 0.05);
+  }
 }
 
 .watch-card-image {
@@ -386,6 +391,14 @@ body {
     width: 536px;
     height: 536px;
   }
+  .details-btn {
+    width: 340px;
+  }
+  .watch-card-image {
+    object-fit: contain;
+    width: 400px;
+    height: 400px;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -394,5 +407,99 @@ body {
   }
   .header-content {
     max-width: 1100px;
+  }
+  .catalog-btn {
+    background-color: rgb(0, 57, 58);
+    padding: 9px 10px;
+  }
+  .watch-image {
+    width: 410px;
+    height: 410px;
+  }
+  .details-btn {
+    width: 280px;
+  }
+  .watch-card-image {
+    object-fit: contain;
+    width: 330px;
+    height: 330px;
+  }
+}
+
+@media (max-width: 790px) {
+  .advertising-content {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .watch-image {
+    width: 636px;
+    height: 636px;
+  }
+
+  .star-image-container {
+    position: absolute;
+    right: -11px;
+    top: -20px;
+    z-index: 2;
+  }
+
+  .star-image {
+    align-items: end;
+    background-color: rgb(162, 187, 64);
+    border-radius: 50%;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+  }
+
+  .slogan-text {
+    font-size: 32px;
+  }
+
+  .description-text {
+    font-size: 16px;
+  }
+
+  .selected-models-watch {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .selected-models-watch-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    min-width: 300px;
+  }
+
+  .watch-card-image {
+    width: 100%;
+  }
+
+  .details-btn {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .advertising-info {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .selected-models-watch-card {
+    flex: 1 1 100%;
+    min-width: 280px;
+  }
+
+  .nav-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-container-link {
+    flex: 1 1 45%;
+    text-align: center;
   }
 }
