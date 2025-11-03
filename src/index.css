@@ -262,6 +262,7 @@ body {
 .selected-models-section {
   padding: 50px 0px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   background-color: rgba(127, 255, 212, 0.056);
 }
@@ -311,8 +312,8 @@ body {
 
 .watch-card-image {
   object-fit: contain;
-  width: 475px;
-  height: 475px;
+  width: 470px;
+  height: 470px;
 }
 
 .watch-card-info {
@@ -383,6 +384,7 @@ body {
 .choosing-us-section {
   padding: 50px 0px;
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -400,11 +402,12 @@ body {
   max-width: 1500px;
   padding: 60px 20px;
   display: flex;
+  justify-content: center;
   gap: 2rem;
 }
 
-.warranty-card {
-  width: 475px;
+.choosing-us-card {
+  width: 470px;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -420,21 +423,21 @@ body {
   }
 }
 
-.warranty-logo {
+.choosing-us-card-logo {
   display: flex;
   padding: 16px;
   background-color: oklch(91.406% 0.02847 194.148);
   border-radius: 50%;
 }
 
-.warranty-title {
+.choosing-us-card-title {
   font-size: 22px;
   font-weight: 600;
   color: rgb(0, 57, 58);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.warranty-subtitle {
+.choosing-us-card-subtitle {
   width: 75%;
   line-height: 1.5;
   text-align: center;
@@ -456,13 +459,29 @@ body {
     width: 536px;
     height: 536px;
   }
+  .selected-models-watch {
+    max-width: 1300px;
+  }
   .details-btn {
     width: 340px;
   }
   .watch-card-image {
     object-fit: contain;
-    width: 400px;
-    height: 400px;
+    width: 410px;
+    height: 410px;
+  }
+  .choosing-us-card-container {
+    max-width: 1300px;
+  }
+  .choosing-us-card {
+    width: 410px;
+    height: 200px;
+  }
+  .choosing-us-card-title {
+    font-size: 20px;
+  }
+  .choosing-us-card-subtitle {
+    font-size: 15px;
   }
 }
 
@@ -486,8 +505,15 @@ body {
   }
   .watch-card-image {
     object-fit: contain;
-    width: 330px;
-    height: 330px;
+    width: 345px;
+    height: 345px;
+  }
+  .choosing-us-card-container {
+    max-width: 1100px;
+  }
+  .choosing-us-card {
+    width: 345px;
+    height: 200px;
   }
 }
 
@@ -549,5 +575,19 @@ body {
   .advertising-info {
     flex-wrap: wrap;
     gap: 1.5rem;
+  }
+  .watch-card-image {
+    object-fit: contain;
+    width: 345px;
+    height: 345px;
+  }
+  .choosing-us-card-container {
+    max-width: 1100px;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .choosing-us-card {
+    width: 345px;
+    height: 200px;
   }
 }

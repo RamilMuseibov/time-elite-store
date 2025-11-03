@@ -436,8 +436,8 @@ function Main() {
       <section className="choosing-us-section">
         <h1 className="choosing-us-title">Почему выбирают нас</h1>
         <div className="choosing-us-card-container">
-          <div className="warranty-card">
-            <div className="warranty-logo">
+          <div className="choosing-us-card">
+            <div className="choosing-us-card-logo">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -453,11 +453,11 @@ function Main() {
                 <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
               </svg>
             </div>
-            <h1 className="warranty-title">Гарантия подлинности</h1>
-            <p className="warranty-subtitle">Все часы сертифицированы и имеют официальную гарантию производителя</p>
+            <h1 className="choosing-us-card-title">Гарантия подлинности</h1>
+            <p className="choosing-us-card-subtitle">Все часы сертифицированы и имеют официальную гарантию производителя</p>
           </div>
-          <div className="warranty-card">
-            <div className="warranty-logo">
+          <div className="choosing-us-card">
+            <div className="choosing-us-card-logo">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -477,11 +477,11 @@ function Main() {
                 <circle cx="7" cy="18" r="2" />
               </svg>
             </div>
-            <h1 className="warranty-title">Бесплатная доставка</h1>
-            <p className="warranty-subtitle">Доставляем по всей России в защищенной упаковке с трекингом</p>
+            <h1 className="choosing-us-card-title">Бесплатная доставка</h1>
+            <p className="choosing-us-card-subtitle">Доставляем по всей России в защищенной упаковке с трекингом</p>
           </div>
-          <div className="warranty-card">
-            <div className="warranty-logo">
+          <div className="choosing-us-card">
+            <div className="choosing-us-card-logo">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -498,8 +498,8 @@ function Main() {
                 <circle cx="12" cy="12" r="10" />
               </svg>
             </div>
-            <h1 className="warranty-title">Сервисное обслуживание</h1>
-            <p className="warranty-subtitle">Профессиональный ремонт и обслуживание в нашем сервисном центре</p>
+            <h1 className="choosing-us-card-title">Сервисное обслуживание</h1>
+            <p className="choosing-us-card-subtitle">Профессиональный ремонт и обслуживание в нашем сервисном центре</p>
           </div>
         </div>
       </section>
