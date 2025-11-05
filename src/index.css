@@ -84,12 +84,11 @@ body {
   padding: 100px 0px;
   display: flex;
   justify-content: center;
-  /* border-bottom: 1px solid rgb(239, 246, 244); */
 }
 
 .advertising-content {
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   max-width: 1500px;
   align-items: center;
   padding: 20px;
@@ -232,8 +231,8 @@ body {
 
 .star-image-container {
   position: absolute;
-  right: -9px;
-  top: -18px;
+  right: -11px;
+  top: -20px;
   z-index: 2;
 }
 
@@ -242,7 +241,7 @@ body {
   align-items: end;
   background-color: rgb(162, 187, 64);
   border-radius: 50%;
-  padding: 15px;
+  padding: 16px;
   color: rgb(255, 255, 255);
 }
 
@@ -251,7 +250,8 @@ body {
   background-color: rgb(234, 253, 252);
   border-radius: 15px;
   z-index: 1;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07), 0 0 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07),
+    0 0 30px rgba(0, 0, 0, 0.05);
 }
 
 .watch-image {
@@ -294,7 +294,6 @@ body {
   max-width: 1500px;
   padding: 60px 20px;
   display: flex;
-  justify-content: center;
   gap: 2rem;
 }
 
@@ -302,18 +301,20 @@ body {
   padding: 20px 0px;
   border-radius: 10px;
   background-color: rgb(222, 252, 251);
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1), 0 0px 5px rgba(0, 0, 0, 0.07), 0 0 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1), 0 0px 5px rgba(0, 0, 0, 0.07),
+    0 0 20px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s;
 
   &:hover {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.07), 0 0 40px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.07),
+      0 0 40px rgba(0, 0, 0, 0.05);
   }
 }
 
 .watch-card-image {
   object-fit: contain;
-  width: 470px;
-  height: 470px;
+  width: 475px;
+  height: 475px;
 }
 
 .watch-card-info {
@@ -407,7 +408,7 @@ body {
 }
 
 .choosing-us-card {
-  width: 470px;
+  width: 475px;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -415,18 +416,20 @@ body {
   padding: 20px 0px;
   border-radius: 10px;
   background-color: rgb(228, 249, 248);
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1), 0 0px 5px rgba(0, 0, 0, 0.07), 0 0 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1), 0 0px 5px rgba(0, 0, 0, 0.07),
+    0 0 20px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s;
 
   &:hover {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.07), 0 0 40px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.07),
+      0 0 40px rgba(0, 0, 0, 0.05);
   }
 }
 
 .choosing-us-card-logo {
   display: flex;
   padding: 16px;
-  background-color: oklch(91.406% 0.02847 194.148);
+  background-color: rgb(206, 233, 232);
   border-radius: 50%;
 }
 
@@ -448,7 +451,7 @@ body {
 }
 
 .online-consultation-section {
-  padding: 60px 0;
+  padding: 80px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -459,13 +462,13 @@ body {
   max-width: 1500px;
   height: 200px;
   padding: 0 16px;
-  margin: 0 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .online-consultation-title {
+  margin: 0 0 32px 0;
   letter-spacing: 1px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 35px;
@@ -473,19 +476,18 @@ body {
 }
 
 .online-consultation-sibtitle {
-  margin: 0;
-  width: 570px;
+  margin: 0 0 32px 0;
+  width: 580px;
   line-height: 1.5;
   letter-spacing: 1px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  font-size: 18px;
-  color: rgb(255, 230, 230);
+  font-size: 19px;
+  color: rgb(230, 237, 243);
 }
 
 .online-consultation-btn-container {
   display: flex;
-  margin: 32px 0;
   gap: 1rem;
 }
 
@@ -512,13 +514,184 @@ body {
   background-color: transparent;
   border: 1px solid rgb(198, 217, 211);
   border-radius: 5px;
-  border-color: white;
   color: white;
   transition: background-color 0.1s;
   &:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(1, 53, 54);
   }
+}
+
+.footer-container {
+  padding: 70px 0;
+  background-color: rgb(237, 252, 252);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-main-info {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(13, 77, 58);
+  gap: 0.5rem;
+}
+
+.logo-storname-container {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0 0 15px;
+}
+
+.footer-discription {
+  width: 350px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: start;
+  margin: 0px;
+  color: rgb(72, 72, 72);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.footer-catalog {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-catalog-title {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(72, 72, 72);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-catalog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-catalog-link {
+  color: rgb(72, 72, 72);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  width: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  &:hover {
+    color: rgb(13, 77, 58);
+  }
+}
+
+.footer-brands {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-brands-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(72, 72, 72);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 0 16px;
+}
+
+.footer-brands-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-brands-link {
+  color: rgb(72, 72, 72);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  width: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  &:hover {
+    color: rgb(13, 77, 58);
+  }
+}
+
+.footer-contacts {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contacts-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(72, 72, 72);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 0 16px;
+}
+
+.footer-contacts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-contacts-number,
+.footer-contacts-email,
+.footer-contacts-address,
+.footer-contacts-working {
+  margin: 0;
+  color: rgb(72, 72, 72);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  &:hover {
+    color: rgb(13, 77, 58);
+  }
+}
+
+.footer-brands-link {
+  color: rgb(72, 72, 72);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  &:hover {
+    color: rgb(13, 77, 58);
+  }
+}
+
+.footer-all-rights {
+  display: flex;
+}
+
+.all-rights {
+  width: 1500px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgb(235, 237, 236);
+  margin: 40px 0 0;
+  padding: 32px 0 0;
+  color: rgb(72, 72, 72);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 @media (max-width: 1530px) {
@@ -557,6 +730,10 @@ body {
   .choosing-us-card-subtitle {
     font-size: 15px;
   }
+  .online-consultation-container {
+    max-width: 1500px;
+    height: 200px;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -591,6 +768,50 @@ body {
   }
 }
 
+@media (max-width: 1150px) {
+  .advertising-content {
+    max-width: 1100px;
+    align-items: start;
+  }
+  .header-content {
+    max-width: 1100px;
+  }
+  .watch-image {
+    width: 480px;
+    height: 480px;
+  }
+  .selected-models-watch {
+    max-width: 1100px;
+  }
+  .details-btn {
+    width: 90%;
+  }
+  .watch-card-image {
+    object-fit: contain;
+    width: 335px;
+    height: 335px;
+  }
+  .choosing-us-card-container {
+    max-width: 1100px;
+  }
+  .choosing-us-card {
+    width: 335px;
+    height: 200px;
+  }
+  .choosing-us-card-title {
+    font-size: 20px;
+  }
+  .choosing-us-card-subtitle {
+    font-size: 15px;
+  }
+  .footer-content {
+    max-width: 1100px;
+  }
+  .all-rights {
+    width: 500px;
+  }
+}
+
 @media (max-width: 790px) {
   .advertising-content {
     flex-wrap: wrap;
@@ -598,8 +819,8 @@ body {
   }
 
   .watch-image {
-    width: 636px;
-    height: 636px;
+    width: 590px;
+    height: 590px;
   }
 
   .star-image-container {
@@ -625,6 +846,11 @@ body {
     font-size: 16px;
   }
 
+  .selected-models-subtitle {
+    width: 600px;
+    text-align: center;
+  }
+
   .selected-models-watch {
     flex-wrap: wrap;
     justify-content: center;
@@ -632,7 +858,6 @@ body {
   }
 
   .selected-models-watch-card {
-    flex: 1 1 300px;
     max-width: 350px;
     min-width: 300px;
   }
@@ -663,5 +888,16 @@ body {
   .choosing-us-card {
     width: 345px;
     height: 200px;
+  }
+  .online-consultation-title {
+    font-size: 30px;
+    width: 600px;
+  }
+  .footer-content {
+    max-width: 650px;
+    flex-wrap: wrap;
+  }
+  .all-rights {
+    width: 500px;
   }
 }
