@@ -5,6 +5,9 @@ const products = [
   { id: 1, name: "Rolex Submariner", price: "850 000 ₽" },
   { id: 2, name: "Omega Speedmaster", price: "420 000 ₽" },
   { id: 3, name: "Patek Philippe Calatrava", price: "1 200 000 ₽" },
+  { id: 4, name: "Greenwich Astrea", price: "245 000 ₽" },
+  { id: 5, name: "Casio G-SHOCK MTG-G1000RG-1A", price: "1 150 000 ₽" },
+  { id: 6, name: "Jaeger-LeCoultre", price: "1 350 000 ₽" },
 ];
 
 export default function Products() {

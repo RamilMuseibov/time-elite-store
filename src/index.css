@@ -294,6 +294,8 @@ body {
   padding: 60px 20px;
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .selected-models-watch-card {
