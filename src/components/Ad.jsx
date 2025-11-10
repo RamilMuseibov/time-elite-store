@@ -2,7 +2,7 @@ import React from "react";
 import WatchIcon from "../icons/WatchIcon";
 import ShieldIcon from "../icons/ShieldIcon";
 import AdCard from "./AdCard";
-import TruckIcons from "../icons/TruckIcons";
+import TruckIcons from "../icons/TruckIcon";
 
 export default function Ad() {
   return (
@@ -12,7 +12,7 @@ export default function Ad() {
         <AdCard title="Гарантия подлинности" icon={<ShieldIcon />}>
           Все часы сертифицированы и имеют официальную гарантию производителя
         </AdCard>
-        <AdCard title="Гарантия подлинности" icon={<TruckIcons />}>
+        <AdCard title="Бесплатная доставка" icon={<TruckIcons />}>
           Доставляем по всей России в защищенной упаковке с трекингом
         </AdCard>
         <AdCard

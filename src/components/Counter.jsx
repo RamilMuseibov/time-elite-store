@@ -35,7 +35,7 @@ export default function Counter() {
       <Test />
     </div>
   );
-}
+} 
 
 function CounterView(props) {
   console.log("renderCounterView", props.value);
