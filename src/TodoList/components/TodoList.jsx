@@ -23,13 +23,17 @@ export default function TodoList() {
       setName("");
     }
   }
-  
-  function tasksToggle(id) {
 
-    if () {
-      
-    }
-    
+  function tasksToggle(id) {
+    setTasks(
+      tasks.map((task) =>
+        task.id === id ? { ...task, isDone: !task.isDone } : task
+      )
+    );
+  }
+
+  function delTasks(id) {
+    setTasks(tasks.filter((task) => task.id !== id));
   }
 
   return (
@@ -62,7 +66,10 @@ export default function TodoList() {
                 onChange={() => tasksToggle(task.id)}
               ></input>
               {task.title}
-              <button className="todoList_del-tasks-btn">
+              <button
+                onClick={() => delTasks(task.id)}
+                className="todoList_del-tasks-btn"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
