@@ -1,0 +1,39 @@
+.todoList_add-tasks-container {
+  display: flex;
+}
+
+.todoList_todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+
+.todoList_tasks-container {
+  display: flex;
+}
+
+.todoList_todo-list-item {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+.todoList_complited-task-btn {
+  cursor: pointer;
+}
+
+.todoList_del-tasks-btn {
+  gap: 2rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.crossout {
+  text-decoration: line-through;
+  color: #888;
+}
+
+
+
+

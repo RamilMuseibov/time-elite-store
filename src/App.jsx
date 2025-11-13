@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Products from "./components/Products";
 import Subscribe from "./components/Subscribe";
+import TodoList from "./TodoList/components/TodoList";
 
 export default function App() {
   console.log("renderApp");
@@ -13,7 +14,8 @@ export default function App() {
     <div className="app-container">
       <Header />
       <main className="main-container">
-        <Counter />
+        <TodoList />
+        {/* <Counter /> */}
         <About />
         <Products />
         <Ad />
