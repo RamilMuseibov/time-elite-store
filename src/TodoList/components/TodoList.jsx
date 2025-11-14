@@ -11,14 +11,17 @@ export default function TodoList() {
     { id: 2, title: "Погладить кошку", isDone: false },
     { id: 3, title: "Погулять с собакой", isDone: false },
   ]);
+  console.log(tasks);
 
   function addTasks() {
-    if (name.trim() !== "") {
+    const processedName = name.trim();
+    if (processedName !== "") {
       const newTask = {
         id: Date.now(),
-        title: name,
+        title: processedName,
         isDone: false,
       };
+
       setTasks([...tasks, newTask]);
       setName("");
     }
@@ -92,5 +95,5 @@ export default function TodoList() {
         </ul>
       </div>
     </div>
-  ); 
+  );
 }
